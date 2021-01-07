@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=+prompt("nhao vao dey");
+    let n=2;
+    let count=0;
+
+    while (count<number) {
+        let lag=true;
+        for (let i = 2; i<n ; i++) {
+            if (n%i==0) {
+                lag=false;
+            }
+        }
+        if (lag){
+            document.write('so nguyen to la'+n+'<br>');
+            count++;
+        }
+        n++;
+    }
+
+
+
+</script>
+</body>
+</html>
